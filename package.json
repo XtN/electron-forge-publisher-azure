@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-publisher-azure",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Azure publisher for Electron Forge",
   "keywords": [
     "electron-forge",
@@ -47,7 +47,7 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "build": "pnpm run clean && tsc -p ./tsconfig.json",
     "prepack": "pnpm run build",
     "test": "vitest run",
@@ -58,5 +58,5 @@
     "dist",
     "src"
   ],
-  "packageManager": "pnpm@10.17.0"
+  "packageManager": "pnpm@10.30.3"
 }
